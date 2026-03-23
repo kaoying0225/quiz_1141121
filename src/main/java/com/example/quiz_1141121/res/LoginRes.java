@@ -1,27 +1,33 @@
-package com.example.quiz_1141121.req;
+package com.example.quiz_1141121.res;
 
-import java.util.List;
 
-public class FillinReq {
 
-	private int quizId;
-	
+public class LoginRes extends BasicRes {
+
 	private String email;
-
+	
 	private String name;
-
+	
 	private String phone;
 	
 	private int age;
-	
-	private List<AnswerVo>answerVoList;
 
-	public int getQuizId() {
-		return quizId;
+	public LoginRes() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	public void setQuizId(int quizId) {
-		this.quizId = quizId;
+	public LoginRes(String email) {
+		super();
+		this.email = email;
+	}
+
+	public LoginRes(int code, String message, String email, String name, String phone, int age) {
+		super(code, message);
+		this.email = email;
+		this.name = name;
+		this.phone = phone;
+		this.age = age;
 	}
 
 	public String getEmail() {
@@ -54,14 +60,6 @@ public class FillinReq {
 
 	public void setAge(int age) {
 		this.age = age;
-	}
-
-	public List<AnswerVo> getAnswerVoList() {
-		return answerVoList;
-	}
-
-	public void setAnswerVoList(List<AnswerVo> answerVoList) {
-		this.answerVoList = answerVoList;
 	}
 	
 }

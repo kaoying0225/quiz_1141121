@@ -14,6 +14,11 @@ public class AnswerVo {
 		super();
 	}
 	
+	public AnswerVo(Question question) {
+		super();
+		this.question = question;
+	}
+
 	public AnswerVo(Question question, String answer) {
 		super();
 		this.question = question;

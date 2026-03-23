@@ -1,20 +1,50 @@
-package com.example.quiz_1141121.req;
+package com.example.quiz_1141121.res;
 
 import java.util.List;
 
-public class FillinReq {
+import com.example.quiz_1141121.req.AnswerVo;
+
+public class FeedBackRes extends BasicRes {
 
 	private int quizId;
-	
+
 	private String email;
 
 	private String name;
 
 	private String phone;
-	
+
 	private int age;
-	
-	private List<AnswerVo>answerVoList;
+
+	private List<AnswerVo> answerVoList;
+
+	public FeedBackRes() {
+		super();
+	}
+
+	public FeedBackRes(int quizId, String email, String name, String phone, int age) {
+		super();
+		this.quizId = quizId;
+		this.email = email;
+		this.name = name;
+		this.phone = phone;
+		this.age = age;
+	}
+
+	public FeedBackRes(int code, String message) {
+		super(code, message);
+	}
+
+	public FeedBackRes(int code, String message, int quizId, String email, String name, String phone, int age,
+			List<AnswerVo> answerVoList) {
+		super(code, message);
+		this.quizId = quizId;
+		this.email = email;
+		this.name = name;
+		this.phone = phone;
+		this.age = age;
+		this.answerVoList = answerVoList;
+	}
 
 	public int getQuizId() {
 		return quizId;
@@ -63,5 +93,5 @@ public class FillinReq {
 	public void setAnswerVoList(List<AnswerVo> answerVoList) {
 		this.answerVoList = answerVoList;
 	}
-	
+
 }

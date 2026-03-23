@@ -1,10 +1,14 @@
 package com.example.quiz_1141121.entity;
 
+import com.example.quiz_1141121.constants.ValidationMsg;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.IdClass;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "question")
@@ -15,10 +19,12 @@ public class Question {
 	@Column(name = "quiz_id")
 	private int quizId;
 
+	@Min(value = 1, message = ValidationMsg.QUESTION_ID_ERROR)
 	@Id
 	@Column(name = "question_id")
 	private int questionId;
 
+	@NotBlank(message = ValidationMsg.QUESTION_ERROR)
 	@Column(name = "question")
 	private String question;
 

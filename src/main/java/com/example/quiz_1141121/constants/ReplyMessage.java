@@ -15,11 +15,13 @@ public enum ReplyMessage {
 	QUIZ_ID_MISSMATCH(400, "Quiz Id Missmatch!"),
 	QUIZ_UPDATE_FORBIDDEN(400, "Quiz Update Forbidden!"),
 	QUIZ_NOT_FOUND(404, "Quiz Not Found!"),
-	USER_EMAIL_ERROR(404, "User Email Errow!"),
-	USER_NAME_ERROR(404, "User Name Errow!"),
-	USER_AGE_ERROR(404, "User Age Errow!"),
-	USER_PASSWORD_ERROR(404, "User Password Errow!"),
+	USER_EMAIL_ERROR(404, "User Email Error!"),
+	USER_NAME_ERROR(404, "User Name Error!"),
+	USER_AGE_ERROR(404, "User Age Error!"),
+	USER_PASSWORD_ERROR(404, "User Password Error!"),
 	USER_EMAIL_EXISTED(404, "User Email Existed!"),
+	USER_NOT_FOUND(404, "User Not Found"),
+	USER_PASSWORD_NOT_UPDATE(404, "User Password Not Update"),
 	ANSWER_REQUIRED(400, "Answer Required!");
 	
 	private int code;

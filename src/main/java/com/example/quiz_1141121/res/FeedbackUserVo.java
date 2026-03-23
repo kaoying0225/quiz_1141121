@@ -15,7 +15,7 @@ public class FeedbackUserVo {
 	
 	private int age;
 	
-	private LocalDate fillinData;
+	private LocalDate fillinDate;
 	
 	private List<AnswerVo> answerVoList;
 	
@@ -23,23 +23,23 @@ public class FeedbackUserVo {
 		super();
 	}
 
-	public FeedbackUserVo(String userName, String phone, String email, int age, LocalDate fillinData) {
+	public FeedbackUserVo(String userName, String phone, String email, int age, LocalDate fillinDate) {
 		super();
 		this.userName = userName;
 		this.phone = phone;
 		this.email = email;
 		this.age = age;
-		this.fillinData = fillinData;
+		this.fillinDate = fillinDate;
 	}
 
-	public FeedbackUserVo(String userName, String phone, String email, int age, LocalDate fillinData,
+	public FeedbackUserVo(String userName, String phone, String email, int age, LocalDate fillinDate,
 			List<AnswerVo> answerVoList) {
 		super();
 		this.userName = userName;
 		this.phone = phone;
 		this.email = email;
 		this.age = age;
-		this.fillinData = fillinData;
+		this.fillinDate = fillinDate;
 		this.answerVoList = answerVoList;
 	}
 
@@ -51,12 +51,12 @@ public class FeedbackUserVo {
 		this.userName = userName;
 	}
 
-	public LocalDate getFillinData() {
-		return fillinData;
+	public LocalDate getFillinDate() {
+		return fillinDate;
 	}
 
-	public void setFillinData(LocalDate fillinData) {
-		this.fillinData = fillinData;
+	public void setFillinDate(LocalDate fillinDate) {
+		this.fillinDate = fillinDate;
 	}
 
 	public String getPhone() {

@@ -3,23 +3,41 @@ package com.example.quiz_1141121.req;
 import java.time.LocalDate;
 import java.util.List;
 
+import org.hibernate.annotations.NotFound;
+
+import com.example.quiz_1141121.constants.ValidationMsg;
 import com.example.quiz_1141121.entity.Question;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 public class CreateReq {
 
+	/* @NotBlank: 限制屬性值不能是 1.空子串 2.全空白字串 3.null
+	 * message 是指當屬性值違反限制時得到的訊息，等號後面的值必須是常數(final) */
+	@NotBlank(message = ValidationMsg.TITLE_ERROR)
 	private String title;
-
+	
+	@NotBlank(message = ValidationMsg.DESCRIPTION_ERROR)
 	private String description;
 
+	@NotNull(message = ValidationMsg.START_DATE_ERROR)
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private LocalDate startDate;
 
+	@NotNull(message = ValidationMsg.END_DATE_ERROR)
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private LocalDate endDate;
 
 	private boolean published;
 
+	/* 嵌套驗證: 驗證自定義物件(class)中的屬性 
+	 * @Valid: 為了讓嵌套驗證中的屬性限制生效，就是 Question 中的屬性限制 */
+	@Valid
+	@NotEmpty(message = ValidationMsg.QUESTION_LIST_IS_EMPTY)
 	private List<Question> questionList;
 
 	public String getTitle() {

@@ -25,4 +25,11 @@ public interface UserDao extends JpaRepository<User, String> {
 	
 	@Query(value = "select * from user where email = ?1", nativeQuery = true)
 	public User getByEmail(String email);
+	
+	@Modifying
+	@Transactional
+	@Query(value = "insert into user (email, password) "//
+			+ " values(?1, ?2) on duplicate key update"//
+			+ " password = IFNULL(?2,password)", nativeQuery = true)
+	public int upsert(String email, String password);
 }

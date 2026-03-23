@@ -18,8 +18,10 @@ import com.example.quiz_1141121.entity.Fillin;
 import com.example.quiz_1141121.entity.Question;
 import com.example.quiz_1141121.entity.User;
 import com.example.quiz_1141121.req.AnswerVo;
+import com.example.quiz_1141121.req.FeedBackReq;
 import com.example.quiz_1141121.req.FillinReq;
 import com.example.quiz_1141121.res.BasicRes;
+import com.example.quiz_1141121.res.FeedBackRes;
 import com.example.quiz_1141121.res.FeedbackUserVo;
 import com.example.quiz_1141121.res.GetFillinbackUserRes;
 
@@ -45,7 +47,7 @@ public class FillinService {
 		/* 新增資料 */
 		try {
 			for(AnswerVo vo : req.getAnswerVoList()) {
-				fillinDao.insert(req.getQuiz_id(), vo.getQuestion().getQuestionId(),//
+				fillinDao.insert(req.getQuizId(), vo.getQuestion().getQuestionId(),//
 						req.getEmail(), vo.getAnswer());
 			}
 		} catch (Exception e) {
@@ -57,11 +59,12 @@ public class FillinService {
 	
 	/* 參數檢查 */
 	public BasicRes checkParms(FillinReq req) {
-		if(req.getQuiz_id() <= 0) {
+		if(req.getQuizId() <= 0) {
 			return new BasicRes(ReplyMessage.USER_EMAIL_ERROR.getCode(), //
 					ReplyMessage.USER_EMAIL_ERROR.getMessage());
 		}
 		if(!StringUtils.hasText(req.getEmail())) {
+			System.out.println(req.getEmail());
 			return new BasicRes(ReplyMessage.USER_EMAIL_ERROR.getCode(), //
 					ReplyMessage.USER_EMAIL_ERROR.getMessage());
 		}
@@ -86,6 +89,7 @@ public class FillinService {
 		return null;
 	}
 	
+	// 取得該問卷的所有作答者的答案
 	public GetFillinbackUserRes getAllFillinUsers(int quizId) {
 		if(quizId <= 0) {
 			return new GetFillinbackUserRes(ReplyMessage.QUIZ_ID_ERROR.getCode(), //
@@ -127,6 +131,81 @@ public class FillinService {
 				ReplyMessage.SUCCESS.getMessage(), userVoList);
 	}
 	
+	// 取的使用者對該問卷的答案
+	public GetFillinbackUserRes getAnswerByIdAndEmail(int quizId, String email) {
+		if(quizId <= 0) {
+			return new GetFillinbackUserRes(ReplyMessage.QUIZ_ID_ERROR.getCode(), //
+					ReplyMessage.QUIZ_ID_ERROR.getMessage());
+		}
+		// 根據 email&quizId 取得使用者對該問卷的答案(quiz_id, questionId, email, answer, fillinDate)
+		List<Fillin> list = fillinDao.getByQuizIdAndEmail(quizId, email);
+		// 根據 quizId 取的該問卷的基本資料(quiz_id, question_id, question, type, is_required, options)
+		List<Question> questionList = questionDao.getByQuizId(quizId);
+		// 存放該問卷的基本資料和答案 
+		List<AnswerVo> answerVoList = new ArrayList<>();
+		// 問卷中的每一道題目
+		for(Question question : questionList) {
+			// 使用者的所有回答
+			for(Fillin fillin : list) {
+				// 比對 question_id 將 題目內容與答案 封裝進 answerVo 並存入 answerVoList 中
+				if(fillin.getQuestionId() == question.getQuestionId()) {
+					AnswerVo answerVo = new AnswerVo(question, fillin.getAnswer());
+					answerVoList.add(answerVo);
+				}
+			}
+		}
+		// 建立存放使用者資料的清單
+		List<FeedbackUserVo> userVoList = new ArrayList<>();
+		// 取得使用者基本資料
+		User user = userDao.getByEmail(email);
+		// 存放使用者的資料與所有答案
+		FeedbackUserVo userVo = new FeedbackUserVo();
+		// 存入使用者的資料
+		userVo.setEmail(email);
+		userVo.setUserName(user.getName());
+		userVo.setPhone(user.getPhone());
+		userVo.setAge(user.getAge());
+		// 存入題目與答案
+		userVo.setAnswerVoList(answerVoList);
+		userVoList.add(userVo);
+		return new GetFillinbackUserRes(ReplyMessage.SUCCESS.getCode(), //
+				ReplyMessage.SUCCESS.getMessage(), userVoList);
+	}
 	
-	
+	//
+	public FeedBackRes feedBack(FeedBackReq req) {
+		/* 透過 quizId 取得所有問題 */
+		List<Question> quList = questionDao.getByQuizId(req.getQuizId());
+		/* 取得使用者對該問卷的答案 */
+		List<Fillin> fillinList = fillinDao.getByQuizIdAndEmail(req.getQuizId(), req.getEmail());
+		/* 取得使用者基本資料 */
+		User user = userDao.getByEmail(req.getEmail());
+		if(user == null) {
+			return new FeedBackRes(ReplyMessage.USER_NOT_FOUND.getCode(), //
+					ReplyMessage.USER_NOT_FOUND.getMessage());
+		}
+		List<AnswerVo> answerVoList = new ArrayList<>();
+		/* 把使用者基本資料放進 FeedBackRes */
+		FeedBackRes res = new FeedBackRes(ReplyMessage.SUCCESS.getCode(), //
+				ReplyMessage.SUCCESS.getMessage(), req.getQuizId(), req.getEmail(), user.getName(),//
+				user.getPhone(), user.getAge(), answerVoList);
+		/* 把答案匹配到對應的問題上 */
+		for(Question qu : quList) {
+			AnswerVo vo = new AnswerVo(qu); // vo 中一定會包含 question ，但不一定會有使用者的填答
+			for(Fillin fillin : fillinList) {
+				if(qu.getQuestionId() == fillin.getQuestionId()) {
+					/* 把 answer  vo 放到中*/
+					vo.setAnswer(fillin.getAnswer());
+					answerVoList.add(vo);
+					/* 有匹配到到相同的題號，就可以跳過剩下 Fillin 的比對 */
+					break;
+				}
+			}
+		}
+		return res;
+	}
+	public int count(int quizId, String email) {
+		int num = fillinDao.countByQuizIdAndEmail(quizId, email);
+		return num;
+	}
 }

@@ -13,7 +13,7 @@ import com.example.quiz_1141121.entity.Quiz;
 
 
 @Repository
-public interface QuizDao extends JpaRepository<Quiz, Integer>{
+public interface QuizDao extends JpaRepository<Quiz, Integer> {
 
 	@Modifying
 	@Transactional
@@ -33,8 +33,7 @@ public interface QuizDao extends JpaRepository<Quiz, Integer>{
 	
 	@Modifying
 	@Transactional
-	@Query(value = "update quiz set title = ?2, description = ?3, start_date = ?4,// "
-			+ "end_date = ?5, is_published = ?6)", nativeQuery = true)
+	@Query(value = "update quiz set title = ?2, description = ?3, start_date = ?4, end_date = ?5, is_published = ?6 where id = ?1", nativeQuery = true)
 	public void update(int id, String title, String description, LocalDate startDate, LocalDate endDate,// 
 			boolean published);
 	

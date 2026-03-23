@@ -16,9 +16,16 @@ public interface FillinDao extends JpaRepository<Fillin, FillinId> {
 
 	@Modifying
 	@Transactional
-	@Query(value = "insert into fillin (quiz_id, qoestion_id, email, email) "
+	@Query(value = "insert into fillin (quiz_id, question_id, user_email, answer) "
 			+ "values (?1, ?2, ?3, ?4)", nativeQuery = true)
-	public void insert(int quizId, int qoestionId, String email, String answer);
+	public void insert(int quizId, int questionId, String email, String answer);
+	
 	@Query(value = "select * from fillin where quiz_id = ?1", nativeQuery = true)
 	public List<Fillin> getByQuizId(int quizId);
+	
+	@Query(value = "select * from fillin where quiz_id = ?1 and user_email = ?2", nativeQuery = true)
+	public List<Fillin> getByQuizIdAndEmail(int quizId, String email);
+	
+	@Query(value = "select count(user_email) from fillin where quiz_id = ?1 and user_email = ?2", nativeQuery = true)
+	public int countByQuizIdAndEmail(int quizId, String email);
 }
