@@ -1,6 +1,7 @@
 package com.example.quiz_1141121.service;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
@@ -9,8 +10,8 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
@@ -184,7 +185,13 @@ public class QuizService {
 	}
 	
 	// 取得題目
+	@Cacheable(cacheNames = "getQuestionList", key = "#p0.toString()")
 	public GetQuestionRes getQuestionList(int quizId) {
+		System.out.println("==================" + LocalDateTime.now());
+		if(quizId <= 0) {
+			return new GetQuestionRes(ReplyMessage.QUIZ_ID_ERROR.getCode(), //
+					ReplyMessage.QUIZ_ID_ERROR.getMessage());
+		}
 		return new GetQuestionRes(ReplyMessage.SUCCESS.getCode(), //
 				ReplyMessage.SUCCESS.getMessage(), questionDao.getByQuizId(quizId));
 	}

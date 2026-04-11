@@ -37,6 +37,20 @@ public class Question {
 	@Column(name = "options")
 	private String options;
 
+	public Question() {
+		super();
+	}
+
+	public Question(@Min(value = 1, message = "Question Id Error!") int questionId,
+			@NotBlank(message = "Question Error!") String question, String type, boolean required, String options) {
+		super();
+		this.questionId = questionId;
+		this.question = question;
+		this.type = type;
+		this.required = required;
+		this.options = options;
+	}
+
 	public int getQuizId() {
 		return quizId;
 	}

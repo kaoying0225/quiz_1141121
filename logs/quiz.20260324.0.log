@@ -1,0 +1,105 @@
+09:52:15.636 INFO  [main]c.example.quiz_1141121.Quiz1141121ApplicationTests - Starting Quiz1141121ApplicationTests using Java 21.0.10 with PID 20748 (started by USER in C:\Users\USER\Desktop\JAVA\quiz_1141121)
+09:52:15.638 INFO  [main]c.example.quiz_1141121.Quiz1141121ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+09:52:16.082 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+09:52:16.437 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:52:16.501 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+09:52:16.967 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:52:17.235 INFO  [main]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b4bd341
+09:52:17.237 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:52:17.274 INFO  [main]org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+09:52:17.366 INFO  [main]org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+09:52:17.883 INFO  [main]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09:52:18.010 INFO  [main]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/quiz_1141121?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: quiz_1141121/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+09:52:18.347 WARN  [main]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.QuestionId
+09:52:18.347 WARN  [main]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.FillinId
+09:52:18.916 INFO  [main]org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09:52:18.924 INFO  [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:52:19.018 INFO  [main]o.s.d.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+09:52:19.449 WARN  [main]o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:52:20.041 INFO  [main]c.example.quiz_1141121.Quiz1141121ApplicationTests - Started Quiz1141121ApplicationTests in 4.771 seconds (process running for 5.932)
+09:52:20.044 WARN  [main]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+09:52:20.044 WARN  [main]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+09:52:20.767 INFO  [SpringApplicationShutdownHook]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:52:20.769 INFO  [SpringApplicationShutdownHook]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09:52:20.771 INFO  [SpringApplicationShutdownHook]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+09:53:01.970 INFO  [main]c.example.quiz_1141121.Quiz1141121ApplicationTests - Starting Quiz1141121ApplicationTests using Java 21.0.10 with PID 34416 (started by USER in C:\Users\USER\Desktop\JAVA\quiz_1141121)
+09:53:01.972 INFO  [main]c.example.quiz_1141121.Quiz1141121ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+09:53:02.349 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+09:53:02.646 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:53:02.709 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+09:53:03.082 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:53:03.281 INFO  [main]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1da745a2
+09:53:03.283 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:53:03.309 INFO  [main]org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+09:53:03.362 INFO  [main]org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+09:53:03.801 INFO  [main]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09:53:03.891 INFO  [main]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/quiz_1141121?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: quiz_1141121/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+09:53:04.111 WARN  [main]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.QuestionId
+09:53:04.112 WARN  [main]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.FillinId
+09:53:04.561 INFO  [main]org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09:53:04.569 INFO  [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:53:04.653 INFO  [main]o.s.d.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+09:53:05.037 WARN  [main]o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:53:05.523 INFO  [main]c.example.quiz_1141121.Quiz1141121ApplicationTests - Started Quiz1141121ApplicationTests in 3.869 seconds (process running for 4.775)
+09:53:05.525 WARN  [main]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+09:53:05.525 WARN  [main]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+09:53:05.927 INFO  [SpringApplicationShutdownHook]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:53:05.930 INFO  [SpringApplicationShutdownHook]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09:53:05.934 INFO  [SpringApplicationShutdownHook]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+09:54:55.710 INFO  [main]c.example.quiz_1141121.Quiz1141121ApplicationTests - Starting Quiz1141121ApplicationTests using Java 21.0.10 with PID 5116 (started by USER in C:\Users\USER\Desktop\JAVA\quiz_1141121)
+09:54:55.711 INFO  [main]c.example.quiz_1141121.Quiz1141121ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+09:54:56.083 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+09:54:56.395 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:54:56.453 INFO  [main]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+09:54:56.828 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:54:57.013 INFO  [main]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4597e6e3
+09:54:57.015 INFO  [main]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:54:57.039 INFO  [main]org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+09:54:57.090 INFO  [main]org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+09:54:57.477 INFO  [main]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09:54:57.565 INFO  [main]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/quiz_1141121?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: quiz_1141121/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+09:54:57.789 WARN  [main]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.QuestionId
+09:54:57.789 WARN  [main]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.FillinId
+09:54:58.211 INFO  [main]org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09:54:58.217 INFO  [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:54:58.297 INFO  [main]o.s.d.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+09:54:58.653 WARN  [main]o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:54:59.152 INFO  [main]c.example.quiz_1141121.Quiz1141121ApplicationTests - Started Quiz1141121ApplicationTests in 3.758 seconds (process running for 4.643)
+09:54:59.154 WARN  [main]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+09:54:59.154 WARN  [main]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+09:54:59.528 INFO  [SpringApplicationShutdownHook]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:54:59.529 INFO  [SpringApplicationShutdownHook]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09:54:59.535 INFO  [SpringApplicationShutdownHook]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,41 @@
+13:09:22.665 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Starting Quiz1141121Application using Java 21.0.10 with PID 32468 (C:\Users\USER\Desktop\JAVA\quiz_1141121\bin\main started by USER in C:\Users\USER\Desktop\JAVA\quiz_1141121)
+13:09:22.669 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - No active profile set, falling back to 1 default profile: "default"
+13:09:22.716 INFO  [restartedMain]o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:09:22.717 INFO  [restartedMain]o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:09:23.056 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+13:09:23.606 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:09:23.670 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+13:09:24.372 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+13:09:24.390 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+13:09:24.392 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+13:09:24.392 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+13:09:24.456 INFO  [restartedMain]o.s.b.w.c.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1739 ms
+13:09:24.624 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:09:24.787 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e499708
+13:09:24.789 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:09:24.818 INFO  [restartedMain]org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+13:09:24.897 INFO  [restartedMain]org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+13:09:25.408 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13:09:25.530 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/quiz_1141121?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: quiz_1141121/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+13:09:25.870 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.QuestionId
+13:09:25.870 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.FillinId
+13:09:26.377 INFO  [restartedMain]org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13:09:26.385 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:09:26.490 INFO  [restartedMain]o.s.d.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+13:09:27.026 WARN  [restartedMain]o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:09:27.532 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+13:09:27.564 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+13:09:27.573 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Started Quiz1141121Application in 5.431 seconds (process running for 5.99)
+13:09:27.577 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+13:09:27.577 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'

@@ -3,7 +3,6 @@ package com.example.quiz_1141121.req;
 import java.time.LocalDate;
 import java.util.List;
 
-import org.hibernate.annotations.NotFound;
 
 import com.example.quiz_1141121.constants.ValidationMsg;
 import com.example.quiz_1141121.entity.Question;
@@ -39,6 +38,25 @@ public class CreateReq {
 	@Valid
 	@NotEmpty(message = ValidationMsg.QUESTION_LIST_IS_EMPTY)
 	private List<Question> questionList;
+
+	public CreateReq() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public CreateReq(@NotBlank(message = "Title Error!") String title,
+			@NotBlank(message = "Description Error!") String description,
+			@NotNull(message = "Start Date Error!") LocalDate startDate,
+			@NotNull(message = "End Date Errow!") LocalDate endDate, boolean published,
+			@Valid @NotEmpty(message = "Question List is Empty!") List<Question> questionList) {
+		super();
+		this.title = title;
+		this.description = description;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.published = published;
+		this.questionList = questionList;
+	}
 
 	public String getTitle() {
 		return title;
@@ -88,6 +106,5 @@ public class CreateReq {
 		this.questionList = questionList;
 	}
 
-	
 
 }

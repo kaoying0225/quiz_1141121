@@ -1,0 +1,398 @@
+11:12:48.960 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Starting Quiz1141121Application using Java 21.0.10 with PID 19692 (C:\Users\USER\Desktop\JAVA\quiz_1141121\bin\main started by USER in C:\Users\USER\Desktop\JAVA\quiz_1141121)
+11:12:48.962 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - No active profile set, falling back to 1 default profile: "default"
+11:12:49.013 INFO  [restartedMain]o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:12:49.013 INFO  [restartedMain]o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:12:49.348 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+11:12:49.797 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:12:49.868 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
+11:12:50.575 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:12:50.595 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:12:50.597 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:12:50.597 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+11:12:50.658 INFO  [restartedMain]o.s.b.w.c.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1644 ms
+11:12:50.842 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:12:51.017 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e499708
+11:12:51.018 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:12:51.046 INFO  [restartedMain]org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+11:12:51.124 INFO  [restartedMain]org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+11:12:51.558 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:12:51.674 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/quiz_1141121?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: quiz_1141121/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11:12:51.953 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.QuestionId
+11:12:51.953 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.FillinId
+11:12:52.431 INFO  [restartedMain]org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:12:52.439 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:12:52.555 INFO  [restartedMain]o.s.d.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+11:12:53.076 WARN  [restartedMain]o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:12:53.562 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:12:53.593 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11:12:53.601 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Started Quiz1141121Application in 5.073 seconds (process running for 5.482)
+11:12:53.604 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+11:12:53.604 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+11:15:13.629 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Starting Quiz1141121Application using Java 21.0.10 with PID 33100 (C:\Users\USER\Desktop\JAVA\quiz_1141121\bin\main started by USER in C:\Users\USER\Desktop\JAVA\quiz_1141121)
+11:15:13.633 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - No active profile set, falling back to 1 default profile: "default"
+11:15:13.678 INFO  [restartedMain]o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:15:13.678 INFO  [restartedMain]o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:15:13.905 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+11:15:14.435 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:15:14.494 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+11:15:15.102 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:15:15.117 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:15:15.118 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:15:15.119 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+11:15:15.174 INFO  [restartedMain]o.s.b.w.c.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1495 ms
+11:15:15.364 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:15:15.558 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5785064e
+11:15:15.559 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:15:15.582 INFO  [restartedMain]org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+11:15:15.633 INFO  [restartedMain]org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+11:15:15.962 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:15:16.036 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/quiz_1141121?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: quiz_1141121/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11:15:16.251 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.QuestionId
+11:15:16.251 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.FillinId
+11:15:16.622 INFO  [restartedMain]org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:15:16.627 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:15:16.724 INFO  [restartedMain]o.s.d.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+11:15:17.141 WARN  [restartedMain]o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:15:17.611 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:15:17.632 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11:15:17.640 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Started Quiz1141121Application in 4.46 seconds (process running for 4.865)
+11:15:17.643 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+11:15:17.643 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+11:15:21.046 INFO  [http-nio-8080-exec-1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:15:21.046 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:15:21.046 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+11:15:21.199 WARN  [http-nio-8080-exec-1]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:15:21.326 WARN  [http-nio-8080-exec-3]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:15:56.757 WARN  [http-nio-8080-exec-2]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:15:56.801 WARN  [http-nio-8080-exec-6]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:16:20.521 INFO  [File Watcher]o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+11:16:20.526 INFO  [Thread-1]org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11:16:20.527 INFO  [tomcat-shutdown]org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+11:16:20.532 INFO  [tomcat-shutdown]org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+11:16:20.532 INFO  [Thread-1]org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+11:16:20.535 INFO  [Thread-1]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:16:20.540 INFO  [Thread-1]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:16:20.546 INFO  [Thread-1]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:16:20.633 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Starting Quiz1141121Application using Java 21.0.10 with PID 33100 (C:\Users\USER\Desktop\JAVA\quiz_1141121\bin\main started by USER in C:\Users\USER\Desktop\JAVA\quiz_1141121)
+11:16:20.633 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - No active profile set, falling back to 1 default profile: "default"
+11:16:20.776 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:16:20.789 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 4 JPA repository interfaces.
+11:16:20.848 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:16:20.849 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:16:20.849 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:16:20.849 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+11:16:20.868 INFO  [restartedMain]o.s.b.w.c.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 232 ms
+11:16:20.892 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+11:16:20.897 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ccb2820
+11:16:20.897 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+11:16:20.898 INFO  [restartedMain]org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+11:16:20.915 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:16:20.919 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/quiz_1141121?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: quiz_1141121/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11:16:20.944 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.QuestionId
+11:16:20.946 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.FillinId
+11:16:20.982 INFO  [restartedMain]org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:16:20.982 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:16:21.090 WARN  [restartedMain]o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:16:21.165 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:16:21.172 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11:16:21.173 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Started Quiz1141121Application in 0.56 seconds (process running for 68.399)
+11:16:21.173 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+11:16:21.175 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+11:16:21.176 INFO  [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:16:46.146 INFO  [File Watcher]o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+11:16:46.148 INFO  [Thread-5]org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11:16:46.148 INFO  [tomcat-shutdown]org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+11:16:46.152 INFO  [tomcat-shutdown]org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+11:16:46.152 INFO  [Thread-5]org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+11:16:46.153 INFO  [Thread-5]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:16:46.154 INFO  [Thread-5]com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+11:16:46.157 INFO  [Thread-5]com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+11:16:46.228 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Starting Quiz1141121Application using Java 21.0.10 with PID 33100 (C:\Users\USER\Desktop\JAVA\quiz_1141121\bin\main started by USER in C:\Users\USER\Desktop\JAVA\quiz_1141121)
+11:16:46.228 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - No active profile set, falling back to 1 default profile: "default"
+11:16:46.339 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:16:46.353 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 4 JPA repository interfaces.
+11:16:46.402 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:16:46.403 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:16:46.403 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:16:46.403 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+11:16:46.420 INFO  [restartedMain]o.s.b.w.c.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 190 ms
+11:16:46.440 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+11:16:46.445 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73f33ec9
+11:16:46.445 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+11:16:46.446 INFO  [restartedMain]org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+11:16:46.460 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:16:46.462 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/quiz_1141121?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: quiz_1141121/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11:16:46.484 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.QuestionId
+11:16:46.486 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.FillinId
+11:16:46.521 INFO  [restartedMain]org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:16:46.521 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:16:46.602 WARN  [restartedMain]o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:16:46.657 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:16:46.660 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11:16:46.662 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Started Quiz1141121Application in 0.451 seconds (process running for 93.887)
+11:16:46.664 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+11:16:46.664 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+11:16:46.664 INFO  [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:17:16.758 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Starting Quiz1141121Application using Java 21.0.10 with PID 30440 (C:\Users\USER\Desktop\JAVA\quiz_1141121\bin\main started by USER in C:\Users\USER\Desktop\JAVA\quiz_1141121)
+11:17:16.761 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - No active profile set, falling back to 1 default profile: "default"
+11:17:16.801 INFO  [restartedMain]o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:17:16.801 INFO  [restartedMain]o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:17:17.029 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+11:17:17.560 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:17:17.622 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+11:17:18.209 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:17:18.221 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:17:18.222 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:17:18.222 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+11:17:18.271 INFO  [restartedMain]o.s.b.w.c.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1468 ms
+11:17:18.418 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:17:18.590 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5515c531
+11:17:18.591 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:17:18.614 INFO  [restartedMain]org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+11:17:18.663 INFO  [restartedMain]org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+11:17:18.979 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:17:19.050 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/quiz_1141121?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: quiz_1141121/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11:17:19.260 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.QuestionId
+11:17:19.260 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.FillinId
+11:17:19.617 INFO  [restartedMain]org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:17:19.622 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:17:19.719 INFO  [restartedMain]o.s.d.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+11:17:20.157 WARN  [restartedMain]o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:17:20.627 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:17:20.645 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11:17:20.654 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Started Quiz1141121Application in 4.359 seconds (process running for 4.757)
+11:17:20.658 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+11:17:20.658 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+11:17:23.512 INFO  [http-nio-8080-exec-1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:17:23.512 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:17:23.514 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+11:17:23.657 WARN  [http-nio-8080-exec-1]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:23.707 WARN  [http-nio-8080-exec-2]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:24.583 WARN  [http-nio-8080-exec-3]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:24.620 WARN  [http-nio-8080-exec-5]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:24.987 WARN  [http-nio-8080-exec-4]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:25.030 WARN  [http-nio-8080-exec-6]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:25.285 WARN  [http-nio-8080-exec-8]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:25.321 WARN  [http-nio-8080-exec-9]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:25.560 WARN  [http-nio-8080-exec-7]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:25.601 WARN  [http-nio-8080-exec-10]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:25.809 WARN  [http-nio-8080-exec-1]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:25.849 WARN  [http-nio-8080-exec-2]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:26.031 WARN  [http-nio-8080-exec-3]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:26.078 WARN  [http-nio-8080-exec-5]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:26.276 WARN  [http-nio-8080-exec-4]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:26.315 WARN  [http-nio-8080-exec-6]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:26.483 WARN  [http-nio-8080-exec-8]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:26.523 WARN  [http-nio-8080-exec-9]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:26.675 WARN  [http-nio-8080-exec-7]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:26.717 WARN  [http-nio-8080-exec-10]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:27.158 WARN  [http-nio-8080-exec-1]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:27.199 WARN  [http-nio-8080-exec-2]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:27.420 WARN  [http-nio-8080-exec-3]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:27.458 WARN  [http-nio-8080-exec-5]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:27.926 WARN  [http-nio-8080-exec-4]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:27.961 WARN  [http-nio-8080-exec-6]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:28.172 WARN  [http-nio-8080-exec-8]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:28.211 WARN  [http-nio-8080-exec-9]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:28.393 WARN  [http-nio-8080-exec-7]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:28.430 WARN  [http-nio-8080-exec-10]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:28.600 WARN  [http-nio-8080-exec-1]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:28.641 WARN  [http-nio-8080-exec-2]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:28.813 WARN  [http-nio-8080-exec-3]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:28.851 WARN  [http-nio-8080-exec-5]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:17:29.003 WARN  [http-nio-8080-exec-4]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Null key returned for cache operation [Builder[public com.example.quiz_1141121.res.GetQuestionRes com.example.quiz_1141121.service.QuizService.getQuestionList(int)] caches=[getQuestionList] | key='#quizId' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false']. If you are using named parameters, ensure that the compiler uses the '-parameters' flag.]
+11:17:29.045 WARN  [http-nio-8080-exec-6]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:21:29.529 INFO  [File Watcher]o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+11:21:29.533 INFO  [Thread-1]org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11:21:29.534 INFO  [tomcat-shutdown]org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+11:21:29.541 INFO  [tomcat-shutdown]org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+11:21:29.542 INFO  [Thread-1]org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+11:21:29.545 INFO  [Thread-1]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:21:29.548 INFO  [Thread-1]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:21:29.554 INFO  [Thread-1]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:21:29.619 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Starting Quiz1141121Application using Java 21.0.10 with PID 30440 (C:\Users\USER\Desktop\JAVA\quiz_1141121\bin\main started by USER in C:\Users\USER\Desktop\JAVA\quiz_1141121)
+11:21:29.619 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - No active profile set, falling back to 1 default profile: "default"
+11:21:29.750 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:21:29.766 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+11:21:29.826 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:21:29.827 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:21:29.827 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:21:29.827 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+11:21:29.847 INFO  [restartedMain]o.s.b.w.c.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 225 ms
+11:21:29.876 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+11:21:29.882 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@571e4954
+11:21:29.882 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+11:21:29.883 INFO  [restartedMain]org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+11:21:29.900 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:21:29.903 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/quiz_1141121?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: quiz_1141121/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11:21:29.928 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.QuestionId
+11:21:29.928 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.FillinId
+11:21:29.962 INFO  [restartedMain]org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:21:29.964 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:21:30.063 WARN  [restartedMain]o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:21:30.136 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:21:30.141 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11:21:30.142 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Started Quiz1141121Application in 0.542 seconds (process running for 254.246)
+11:21:30.144 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+11:21:30.144 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+11:21:30.146 INFO  [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:24:47.131 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Starting Quiz1141121Application using Java 21.0.10 with PID 5216 (C:\Users\USER\Desktop\JAVA\quiz_1141121\bin\main started by USER in C:\Users\USER\Desktop\JAVA\quiz_1141121)
+11:24:47.135 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - No active profile set, falling back to 1 default profile: "default"
+11:24:47.178 INFO  [restartedMain]o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:24:47.178 INFO  [restartedMain]o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:24:47.406 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+11:24:47.952 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:24:48.011 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+11:24:48.641 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:24:48.656 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:24:48.658 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:24:48.658 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+11:24:48.708 INFO  [restartedMain]o.s.b.w.c.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1530 ms
+11:24:48.860 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:24:48.996 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5515c531
+11:24:48.997 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:24:49.021 INFO  [restartedMain]org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+11:24:49.069 INFO  [restartedMain]org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+11:24:49.382 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:24:49.460 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/quiz_1141121?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: quiz_1141121/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11:24:49.681 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.QuestionId
+11:24:49.681 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.FillinId
+11:24:50.046 INFO  [restartedMain]org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:24:50.053 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:24:50.155 INFO  [restartedMain]o.s.d.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+11:24:50.616 WARN  [restartedMain]o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:24:51.154 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:24:51.202 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11:24:51.218 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Started Quiz1141121Application in 4.523 seconds (process running for 4.936)
+11:24:51.229 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+11:24:51.229 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+11:24:55.249 INFO  [http-nio-8080-exec-1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:24:55.250 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:24:55.252 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+11:24:55.541 WARN  [http-nio-8080-exec-2]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:25:27.039 WARN  [http-nio-8080-exec-4]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:25:38.157 WARN  [http-nio-8080-exec-6]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:25:52.062 WARN  [http-nio-8080-exec-8]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+11:26:00.898 WARN  [http-nio-8080-exec-10]o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+12:11:41.777 INFO  [File Watcher]o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12:11:41.784 INFO  [Thread-1]org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12:11:41.785 INFO  [tomcat-shutdown]org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+12:11:41.790 INFO  [tomcat-shutdown]org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+12:11:41.791 INFO  [Thread-1]org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+12:11:41.794 INFO  [Thread-1]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:11:41.799 INFO  [Thread-1]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:11:41.801 INFO  [Thread-1]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12:11:41.897 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Starting Quiz1141121Application using Java 21.0.10 with PID 5216 (C:\Users\USER\Desktop\JAVA\quiz_1141121\bin\main started by USER in C:\Users\USER\Desktop\JAVA\quiz_1141121)
+12:11:41.898 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - No active profile set, falling back to 1 default profile: "default"
+12:11:42.026 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:11:42.042 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+12:11:42.098 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12:11:42.098 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:11:42.099 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+12:11:42.099 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+12:11:42.117 INFO  [restartedMain]o.s.b.w.c.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 218 ms
+12:11:42.143 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+12:11:42.147 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3049498e
+12:11:42.147 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+12:11:42.148 INFO  [restartedMain]org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+12:11:42.169 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12:11:42.171 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/quiz_1141121?serverTimezone=GMT%2B8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: quiz_1141121/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12:11:42.196 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.QuestionId
+12:11:42.196 WARN  [restartedMain]org.hibernate.orm.core - HHH000038: Composite id class does not override equals(): com.example.quiz_1141121.entity.FillinId
+12:11:42.231 INFO  [restartedMain]org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:11:42.231 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:11:42.327 WARN  [restartedMain]o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:11:42.401 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+12:11:42.404 INFO  [restartedMain]org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+12:11:42.409 INFO  [restartedMain]com.example.quiz_1141121.Quiz1141121Application - Started Quiz1141121Application in 0.533 seconds (process running for 2816.122)
+12:11:42.409 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+12:11:42.409 WARN  [restartedMain]org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+12:11:42.412 INFO  [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

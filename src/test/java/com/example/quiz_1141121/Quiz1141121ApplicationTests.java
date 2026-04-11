@@ -21,12 +21,10 @@ import org.springframework.util.Assert;
 import org.springframework.web.client.RestTemplate;
 
 import com.example.quiz_1141121.constants.ReplyMessage;
-import com.example.quiz_1141121.dao.QuestionDao;
 import com.example.quiz_1141121.dao.QuizDao;
 import com.example.quiz_1141121.entity.Question;
 import com.example.quiz_1141121.req.CreateReq;
 import com.example.quiz_1141121.res.CreateRes;
-import com.example.quiz_1141121.service.FillinService;
 import com.example.quiz_1141121.service.QuizService;
 
 import tools.jackson.core.type.TypeReference;
@@ -38,12 +36,6 @@ class Quiz1141121ApplicationTests {
 
 	@Autowired
 	private QuizDao quizDao;
-	
-	@Autowired
-	private QuestionDao questionDao;
-	
-	@Autowired
-	private FillinService fillinService;
 	
 	@Autowired
 	private QuizService quizService;
@@ -75,16 +67,16 @@ class Quiz1141121ApplicationTests {
 	}
 	
 	/* 單元測試 */
-//	@Test
-//	public void test() {
-//		List<Question> list = new ArrayList<>(List.of(new Question(1, 1, "午餐調查", "Single", true, "牛排")));
-//		CreateReq req = new CreateReq("午餐調查", "午餐調查", LocalDate.of(2026, 5, 15),// 
-//				LocalDate.of(2026, 8, 25), false, list);
-//		CreateRes res = quizService.create(req);
-//		/* 測試邏輯 */
-//		/* 測試 tittle 沒資料*/
-//		Assert.isTrue(res.getMessage().equals(ReplyMessage.TITLE_ERROR.getMessage()), "測試 tittle 沒資料錯誤!!");
-//	}
+	@Test
+	public void test() {
+		List<Question> list = new ArrayList<>(List.of(new Question(1, "午餐調查", "Single", true, "牛排")));
+		CreateReq req = new CreateReq("", "午餐調查", LocalDate.of(2026, 5, 15),// 
+				LocalDate.of(2026, 8, 25), false, list);
+		CreateRes res = quizService.create(req);
+		/* 測試邏輯 */
+		/* 測試 tittle 沒資料*/
+		Assert.isTrue(res.getMessage().equals(ReplyMessage.TITLE_ERROR.getMessage()), "測試 tittle 沒資料錯誤!!");
+	}
 	
 	@Test
 	public void creatTest() {
